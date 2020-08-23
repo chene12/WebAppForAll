@@ -1,0 +1,33 @@
+CSS Syntax
+    - CSS Syntax is very different than HTML
+    - CSS is a set of 'rules' which in include a 'separator' and one or more
+    'properties' or 'values' as well as some punctuation...
+        ex.
+            body {
+                font-family: arial, sans-serif;
+            }
+
+Referencing CSS in HTML
+    - CSS can be referenced as a style tag in paragraph tags
+        ex.
+            <p style="border-color: red;">
+            Some text.
+            </p>
+    - You can put CSS rules in header as a style tag in addition to the title
+    tag
+        ex.
+            <head>
+                <title>MY APP</title>
+                <style>
+                    body {
+                        font-family: arial, sans-serif;
+                    }
+                </style>
+            </head>
+    - You can put the CSS rules in another file. Reference the following syntax
+    to do so
+        ex.
+            <head>
+                <title>CSS from DOC</title>
+                <link type="text/css" rel="stylesheet" href="rules.css">
+            </head>  

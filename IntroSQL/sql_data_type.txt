@@ -1,0 +1,66 @@
+STRING FIELDS
+    - These data type include CHAR and VARCHAR
+    - Most common character fields
+    - Aware of other character sets (Latin, Asian)
+    - CHAR allocates the entire space
+    - VARCHAR allocates a certain amount of space depending on the data length
+    - If most of the data are going to be about a certain character length, use
+    CHAR, else use VARCHAR
+    - For example, if you are storing 9 digit IDS, it better to use CHAR, since
+    all the data will be 9 character length
+    - If storing something like name, use VARCHAR because names vary in length
+
+
+TEXT FIELDS
+    - Uses a type of character set
+        - TINYTEXT up to 255 characters
+        - TEXT up to 65k
+        - MEDIUMTEXT up to 16m
+        - LONGTEXT up to 4g
+    - Not suitable for indexing or sorting (ORDER BY won't work well on them)
+
+
+BINARY TYPES (RARELY USED)
+    - Character = 8-32 bits of info depending on character set
+    - Byte = 8 but of info
+        - BYTE(n) up to 255 byte
+        - VARBINARY(n) up to 65k bytes
+    - Small images - data
+    - Not indexed or sorted
+
+
+BINARY LARGE OBJECT (BLOB)
+    - Large raw data, files, images, word documents, PDFS, movies, etc.
+    - No translation, indexing, or character set
+        - TINYBLOB(n) up to 255
+        - BLOB(n) up to 65k
+        - MEDIUMBLOB(n) up to 16m
+        - LONGBLOB(n) up to 4g
+
+
+INTEGER NUMBERS
+    - Integers are very efficient, take little storage, and are easy to process
+    - TINYINT (-128, 128)
+    - SMALLINT (-32768, 32768)
+    - INT or INTEGER (2 billion)
+    - BIGINT (10**18 ish)
+
+
+FLOATING POINT NUMBERS
+    - Limited accuracy but high range of representation
+        - FLOAT (32-bit) 10**32 with seven digits of accuracy
+        - DOUBLE (64-bit) 10**308 with 14 points of accuracy
+
+
+DATES
+    - TIMESTAMP 'YYYY-MM-DD HH:MM:SS' number of seconds since 1970
+        - Stored in 32-bt format, is really an integer
+        - Can't calculate milliseconds
+    - DATETIME 'YYYY-MM-DD HH:MM:SS'
+        - More general and stores more dates (even before 1970)
+        - Takes little for space
+    - DATE 'YYYY-MM-DD'
+    - TIME 'HH:MM:SS'
+    - Built in MySQL function NOW()
+        - Returns current time and date
+        

@@ -1,0 +1,11 @@
+<!DOCTYPE html?
+<html>
+    <head>
+        metadata..
+        Metadata about the page
+    </head>
+    <body>
+        Page content...
+        The displayable content of the page
+    </body>
+</html>

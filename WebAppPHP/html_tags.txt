@@ -1,0 +1,35 @@
+HTML TAGS
+```
+<p>
+This is a paragraph tag. Used for any text.
+<strong>Bolds any text.</strong>
+</p>
+<h1>Tag for first header.</h1>
+<img src='x.png'/>      <-- This is self closing tag. They do not require a
+                            corresponding end tag.
+<p>&lt</p>      <-- Creates a less than sign. These combination of letters with
+                    '&' are called entities. They can even create emojis.
+<!--Ignore this. This is an html comment. This is again a self-closing tag.-->
+<a href='http://www.google.com'>
+This is a link tag. The start tag has the link
+and the end tag has the blue-underlined text.
+</a>
+<ul>    <-- starts a unnumbered list
+<1i><p>
+The li creates a bullet point. The 'p' tag spaces out the bullet and the
+text.
+</p></li>
+<table>     <-- starts a table
+    <tr>    <-- creates a row
+        <th>Make</th>       <-- Header row text
+        <th>Model</th>
+        <th>Mileage</th>
+    </tr>
+    <tr>
+        <td>Ford</td>       <-- Data row text
+        <td>Edge</td>
+        <td>10348</td>
+    </tr>
+</table>
+```
+
